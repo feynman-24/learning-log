@@ -47,11 +47,60 @@ print(company[0])
 
 #16
 print(company[-1])
+
 #17
 print(company[10])
 
-#32
+#18
+print("".join(w[0] for w in 'Python For Everyone'.split()))
 
+#19
+print("".join(w[0] for w in company.split()))
+
+#20
+print(company.index("C"))
+
+#21
+print(company.index("F"))
+
+#22
+print(company.rfind("l"))
+
+#23
+print('You cannot end a sentence with because because because is a conjunction'.find('because'))
+
+#24
+print('You cannot end a sentence with because because because is a conjunction'.rfind('because'))
+
+
+#25
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+target = 'because because because'
+start = sentence.find(target)
+end = start + len(target)
+
+print(sentence[start:end])
+
+#26
+print(sentence.find("because"))
+
+#27 same as 25
+
+#28
+print(company.startswith("Coding"))
+
+#29
+print(company.endswith("coding"))
+
+#30
+print('   Coding For All      '.strip())
+
+#31 ans is second one
+print("30DaysOfPython".isidentifier())
+print("thirty_days_of_python".isidentifier())
+
+#32
+print("#".join(['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']))
 
 #33
 print("I am enjoying this challenge.\nI just wonder what is next.")
